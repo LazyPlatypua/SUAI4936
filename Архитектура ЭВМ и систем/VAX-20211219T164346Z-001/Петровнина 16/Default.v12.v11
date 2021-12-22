@@ -1,0 +1,85 @@
+[Processor settings]
+Memory size=2048
+Max commands before interruption=1048576
+Generate messages=1
+[Registers]
+PSL=00000004
+R1=00000002
+R2=0000000C
+R3=00000016
+R4=00000028
+R5=0000002A
+R6=0000003C
+R7=00000108
+RF=000000FC
+[Memory]
+0x00000000=00 00 00 00 00 00 E8 00 00 00 00 00 00 00 00 00 
+0x00000010=18 00 00 00 00 00 00 00 00 00 F0 0A 00 00 00 00 
+0x00000020=00 00 00 00 84 03 00 00 00 00 00 00 00 00 18 00 
+0x00000030=A1 00 00 00 00 00 00 00 84 03 10 F5 00 00 00 00 
+0x000000E0=00 00 00 00 00 00 00 00 00 00 00 00 00 CE 72 73 
+0x000000F0=CA 66 71 D7 65 C3 97 84 86 C0 97 75 00 00 00 00 
+0x00000100=18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[Variable 0]
+Name=X1
+VarType=0
+IsReg=0
+Address=00000006
+Base=3
+[Variable 1]
+Name=X2
+VarType=0
+IsReg=0
+Address=00000010
+Base=3
+[Variable 2]
+Name=X3
+VarType=1
+IsReg=0
+Address=0000001A
+Base=3
+[Variable 3]
+Name=X4
+VarType=1
+IsReg=0
+Address=00000024
+Base=3
+[Variable 4]
+Name=X5
+VarType=2
+IsReg=0
+Address=0000002E
+Base=3
+[Variable 5]
+Name=X6
+VarType=2
+IsReg=0
+Address=00000038
+Base=3
+[Variable 6]
+Name=X2_9
+VarType=0
+IsReg=0
+Address=00000100
+Base=3
+[Windows]
+MemoryEditor.Opened=1
+MemoryEditor.Left=0
+MemoryEditor.Top=88
+MemoryEditor.Width=600
+MemoryEditor.Height=476
+RegsEditor.Opened=1
+RegsEditor.Left=600
+RegsEditor.Top=88
+RegsEditor.Width=263
+RegsEditor.Height=308
+MsgsEditor.Opened=1
+MsgsForm.Left=-12
+MsgsForm.Top=512
+MsgsForm.Width=600
+MsgsForm.Height=300
+VarsEditor.Opened=1
+VarsWin.Left=282
+VarsWin.Top=474
+VarsWin.Width=434
+VarsWin.Height=300
