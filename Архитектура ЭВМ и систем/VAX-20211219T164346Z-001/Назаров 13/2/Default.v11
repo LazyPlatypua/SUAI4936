@@ -1,0 +1,77 @@
+[Processor settings]
+Memory size=2048
+Max commands before interruption=1048576
+Generate messages=1
+[Registers]
+PSL=00000008
+R4=00000022
+R5=00000040
+R6=00000112
+R7=00000018
+RA=00000040
+RB=0000002C
+RC=00000022
+RF=000000F0
+[Memory]
+0x00000010=00 00 00 00 00 00 00 00 1E 00 00 00 00 00 00 00 
+0x00000020=00 00 E5 00 00 00 00 00 00 00 00 00 F1 05 00 00 
+0x00000030=00 00 00 00 00 00 BF 0B 00 00 00 00 00 00 00 00 
+0x00000040=E1 4C 23 00 00 00 00 00 00 00 7F E7 ED 00 00 00 
+0x000000F0=B6 84 D9 75 96 D2 77 96 C1 6A 8B 7C C8 86 95 00 
+[Variable 0]
+Name=X1
+VarType=0
+IsReg=0
+Address=00000018
+Base=3
+[Variable 1]
+Name=X2
+VarType=0
+IsReg=0
+Address=00000022
+Base=3
+[Variable 2]
+Name=X3
+VarType=1
+IsReg=0
+Address=0000002C
+Base=3
+[Variable 3]
+Name=X4
+VarType=1
+IsReg=0
+Address=00000036
+Base=3
+[Variable 4]
+Name=X5
+VarType=2
+IsReg=0
+Address=00000040
+Base=3
+[Variable 5]
+Name=X6
+VarType=2
+IsReg=0
+Address=0000004A
+Base=3
+[Windows]
+MemoryEditor.Opened=1
+MemoryEditor.Left=0
+MemoryEditor.Top=88
+MemoryEditor.Width=600
+MemoryEditor.Height=476
+RegsEditor.Opened=1
+RegsEditor.Left=569
+RegsEditor.Top=274
+RegsEditor.Width=263
+RegsEditor.Height=308
+MsgsEditor.Opened=1
+MsgsForm.Left=0
+MsgsForm.Top=564
+MsgsForm.Width=600
+MsgsForm.Height=300
+VarsEditor.Opened=1
+VarsWin.Left=596
+VarsWin.Top=552
+VarsWin.Width=300
+VarsWin.Height=300
