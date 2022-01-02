@@ -1,0 +1,20 @@
+1. Необходимо установить кафку https://kafka.apache.org/downloads    версия -  2.13-2.6.0 (binary file)
+2. Необходимо установить bash, можно использовать git bash например
+3. Откройте bash терминал там где лежит кафка(перед этим распакуйте кафку), две вкладки
+4. В первой вкладке пропишите bin/zookeeper-server-start.sh config/zookeeper.properties
+5. Во второй вкладке пропишите bin/kafka-server-start.sh config/server.properties
+
+Суть программы: Продюсер оповещает топик объектом estate, consumer слушает и принимает по данному топику объект estate, consumer
+две штуки на разных портах и конечно с разными бд
+
+1.В среде idea проекте consumer необходимо выбрать edit configuration(если в списки будет только один kafkaConsumerApplication),
+нужно добавить еще один kafkaConsumerApplication только с названием другим, создать можно нажав + слева.
+2. Далее при создании необходимо указать что это приложение spring boot
+3. После создания нужно скопировать main class из kafkaConsumerApplication и вставить в новый kafkaConsumerApplication2
+4. Нажать apply и ок
+5. Теперь нужно в application.properties изменить server.port на 8081 и запустить kafkaConsumerApplication выбрав в списке и нажав кнопку run
+6. Тоже самое нужно сделать с kafkaConsumerApplication2 только порт изменить на 8082, таким образом мы получим два приложения
+
+*Бд у них отдельные если изменять что-то на порту 8081 изменится только на нем и тоже самое с 8082, связаны они producer, который
+может отправить post запрос на добавление estate, таким образом он оповестит топик estates и consumer прослушает его и запишет в бд
+в двух приложениях, то есть на портах 8081 и 8082

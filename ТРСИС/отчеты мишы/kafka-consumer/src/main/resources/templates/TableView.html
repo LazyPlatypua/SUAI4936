@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Сдача недвижимости в аренду</title>
+</head>
+<body>
+<div class="container">
+    <h2>Список недвижимости</h2>
+    <p>Сдача недвижимости в аренду</p>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">city</th>
+            <th scope="col">address</th>
+            <th scope="col">area</th>
+            <th scope="col">cost</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <div th:each="estate : ${estates}">
+            <tr>
+                <td><a th:utext="${estates.indexOf(estate)+1}"></a></td>
+                <td><a th:utext="${estate.getName()}"></a></td>
+                <td><a th:utext="${estate.getCity()}"></a></td>
+                <td><a th:utext="${estate.getAddress()}"></a></td>
+                <td><a th:text="${estate.getArea()}"></a></td>
+                <td><a th:text="${estate.getArea()}"></a></td>
+                <td><a th:href="${estate.getId()}+'/delete'">Удалить</a>
+                </td>
+            </tr>
+        </div>
+        </tbody>
+        <a class="btn btn-outline-secondary" href="add" role="button">Добавить недвижимость в аренду</a>
+    </table>
+</div>
+</body>
+</html>

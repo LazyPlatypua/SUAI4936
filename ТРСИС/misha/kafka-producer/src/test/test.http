@@ -1,0 +1,11 @@
+###
+POST http://localhost:8080/estate
+Content-Type: application/json
+
+{
+  "name": "lux",
+  "city": "London",
+  "address": "Baker street 221b",
+  "area": "150",
+  "cost": "777"
+}
